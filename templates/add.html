@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if result%}
+        <h1>{{result[0]}} + {{result[1]}} = {{result[0] + result[1]}}</h1>
+        {% endif %}
+        <form method="POST">
+                <label for="form_a">First Number:</label>
+                <input type="number" class="form-control" id="form_a" name="a">
+                <br/>
+                <label for="form_b">Second Number:</label>
+                <input type="number" class="form-control" id="form_b" name="b">
+            <br/>
+            <input type="submit" class="btn btn-primary" value="Add"/>
+        </form>
+{% endblock %}

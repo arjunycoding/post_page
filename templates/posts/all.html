@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>All Posts</h1>
+    <ul class="blogs">
+        {% for id, post in posts %}
+        <li class="post_item">
+            <a href="{{ url_for('get_post', post_id=id) }}">{{ post[0] }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

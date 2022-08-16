@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if message%}
+        <div class='alert alert-danger' role='alert'>{{ message }}</div>
+    {% endif %}
+        <form method="POST" class="new_post">
+                <label for="title">Title:</label>
+                <input type="text" class="form-control" id="title" name="title">
+                <br/>
+                <label for="content">Content:</label>
+                <textarea class="form-control" aria-label="With textarea"  id="content" name="content"></textarea>
+            <br/>
+            <input type="submit" class="btn btn-primary" value="Create Post"/>
+        </form>
+{% endblock %}
