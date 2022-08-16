@@ -50,12 +50,12 @@ def new_post():
     content = request.form.get("content", None)
     if not(title and content):
         return render_template("posts/new.html", message="Please enter all of the fields")
+    
+    post_id = max(posts.keys()) + 1
 
     
 
-
-
-# CRUD:
+# CRUD: 
 # Create
 # Read
 # Update
