@@ -1,30 +1,40 @@
-main{
-    padding:10px;
+main {
+    padding: 10px;
 }
 
-.blogs{
-    list-style-type: none;
+.container {
     margin: auto;
-    max-width:500px;
+    max-width: 500px;
 }
 
-a, a:hover{
-    color:black;
+.posts {
+    list-style-type: none;
+}
+
+a,
+a:hover {
+    color: black;
     text-decoration: none;
 }
 
-.post_item{
+.post_item {
     background-color: inherit;
     border-bottom: 1px solid black;
-    padding:5px;
+    padding: 5px;
     padding-left: 15px;
 }
 
-input, textarea{
+input,
+textarea {
     max-width: 500px !important;
 }
 
-.new_post{
+.new_post {
     margin: auto;
     max-width: 500px;
+}
+
+.new-post-btn,
+.new-post-btn:hover {
+    color: white
 }

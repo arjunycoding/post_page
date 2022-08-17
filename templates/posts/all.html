@@ -1,12 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
+<div class="container">
     <h1>All Posts</h1>
-    <ul class="blogs">
+    <ul class="posts">
         {% for id, post in posts %}
         <li class="post_item">
             <a href="{{ url_for('get_post', post_id=id) }}">{{ post[0] }}</a>
         </li>
         {% endfor %}
     </ul>
+    <button class="btn-primary btn"><a href="{{ url_for('new_post') }}" class="new-post-btn">New Post</a></button>
+</div>
 {% endblock %}
