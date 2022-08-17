@@ -59,12 +59,13 @@ def new_post():
     title = request.form.get("title", None)
     content = request.form.get("content", None)
     if not (title and content):
-        flash("Please enter all of the fields", "error")
+        flash("Please enter all of the fields", "alert-danger")
         return redirect(url_for('new_post'))
 
     post_id = max(posts.keys()) + 1
     posts[post_id] = (title, content)
-    return redirect(url_for("get_post", post_id=post_id))
+    flash("Your post has successfully been created", "alert-success")
+    return redirect(url_for("get_all_posts", posts=posts.items()))
 
 
 # CRUD:
