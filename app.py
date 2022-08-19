@@ -1,9 +1,22 @@
 # IMPORTS
 from flask import Flask, abort, flash, redirect, request, url_for, render_template
-
+from flask_sqlalchemy import SQLAlchemy
 # APP
 app = Flask(__name__)
 app.secret_key = "ærjüń"
+
+# UNCOMMENT ALL OF THE CODE BELOW EXCEPT STARED THINGS
+# app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:arjun@localhost/flask_blog"
+# app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+# DB(DATABASE)*
+
+# db = SQLAlchemy(app)
+
+# TABLE MODAL*
+# class Posts(db.modal):
+    # id = db.Column(db.Integer, primary_key=True),
+    # title = db.Column(db.Text()),
+    # content = db.Column(db.Text())
 
 # VARIABLES
 posts = {
@@ -11,7 +24,6 @@ posts = {
     2: ('For Lunch I Had...', 'Pizza. It tasted great'),
     3: ('For Dinner I Had...', 'Sushi. It was soo good')
 }
-
 
 @app.route("/")
 # VIEW ALL POSTS
