@@ -38,3 +38,7 @@ textarea {
 .new-post-btn:hover {
     color: white
 }
+
+.delete_btn {
+    float: right;
+}
