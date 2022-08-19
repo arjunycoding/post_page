@@ -41,4 +41,13 @@ textarea {
 
 .delete_btn {
     float: right;
+    color:#dc3545;
+}
+
+.delete_btn:hover {
+    color:#ac2a37;
+}
+
+.delete-no, .delete-no:hover{
+    color:white;
 }

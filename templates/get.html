@@ -3,4 +3,6 @@
 {% block content %}
     <h1>{{ post_title }}</h1>
     <p>{{ post_content }}</p>
+    <button class="btn-primary btn"><a href="{{ url_for('update_post', post_id=post_id) }}" class="new-post-btn">Update Post</a></button>
+
 {% endblock %}
