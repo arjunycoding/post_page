@@ -41,13 +41,22 @@ textarea {
 
 .delete_btn {
     float: right;
-    color:#dc3545;
+    color: #dc3545;
 }
 
 .delete_btn:hover {
-    color:#ac2a37;
+    color: #ac2a37;
 }
 
-.delete-no, .delete-no:hover{
-    color:white;
+.delete-no,
+.delete-no:hover {
+    color: white;
+}
+
+.link {
+    color: #0d6efd;
+}
+
+.link:hover {
+    color: #0b61e0;
 }
